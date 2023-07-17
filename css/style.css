@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
-
+/* common css start */
 :root{
     --primary-font: 'Poppins', sans-serif;
     --secondary-font: 'PT Sans', sans-serif;
     --primary-color:#FFCC00;
     --secondary-color: #353535;
 }
+
 
 *{
     margin: 0;
@@ -30,6 +31,9 @@ li{
     list-style: none;
 }
  
+/* common css end */
+
+/* nav css start */
 
 nav .row{
     justify-content: space-between;
@@ -63,6 +67,7 @@ nav .menu ul li a::after{
 nav .menu ul li:hover a::after{
     width: 100%;
 }
+/* nav css end */
 
 /* banner css start */
 #banner .container{
@@ -74,6 +79,9 @@ nav .menu ul li:hover a::after{
 #banner .image{
 
     width: 50%;
+}
+#banner .info h3{
+    font-weight: 400;
 }
 #banner .info h1{
     padding: 15px 0 25px;
