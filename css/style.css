@@ -44,7 +44,6 @@ nav .menu ul li {
     display: inline-block;
 }
 nav .menu ul li a{
-    
     color: var(--secondary-color);
     font-size: 15px;
     font-weight: 500;
@@ -70,27 +69,50 @@ nav .menu ul li:hover a::after{
 /* nav css end */
 
 /* banner css start */
+#banner{
+    padding: 100px 0;
+}
 #banner .container{
     align-items: center;
+    color: var(--secondary-color);
 }
 #banner .info{
     width: 50%;
 }
 #banner .image{
-
     width: 50%;
 }
+#banner .heading{
+    align-items: center;
+}
+
 #banner .info h3{
+    font-size: 24px;
     font-weight: 400;
+    margin-right: 38px;
+}
+#banner .heading i{
+    font-size: 24px;
+    color: var(--primary-color);
 }
 #banner .info h1{
     padding: 15px 0 25px;
+    font-family: var(--secondary-font);
+    font-size: 64px;
+    font-weight: 700;
+
 }
 #banner .info p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 190%;
     padding-bottom: 77px;
 }
 #banner .info a{
     display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 180%;
     margin-right: 40px;
     margin-bottom: 66px;
     padding: 16px 45px;
@@ -105,6 +127,9 @@ nav .menu ul li:hover a::after{
     color: #fff;
 }
 #banner .follow p{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 180%;
     margin-right: 32px;
 }
 #banner .icon i{
