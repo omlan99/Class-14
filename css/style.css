@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'PT Sans', sans-serif;
+    --primary-color:#FFCC00;
+    --secondary-color: #353535;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--primary-font);
+}
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+ 
+
+nav .row{
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .menu ul li {
+    display: inline-block;
+}
+nav .menu ul li a{
+    
+    color: var(--secondary-color);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 200%;
+    text-transform: uppercase;
+    display: block;
+    padding: 18px 22px 5px;
+    position: relative;
+}
+nav .menu ul li a::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s;
+}
+nav .menu ul li:hover a::after{
+    width: 100%;
+}
+
+/* banner css start */
+#banner .container{
+    align-items: center;
+}
+#banner .info{
+    width: 50%;
+}
+#banner .image{
+
+    width: 50%;
+}
+#banner .info h1{
+    padding: 15px 0 25px;
+}
+#banner .info p{
+    padding-bottom: 77px;
+}
+#banner .info a{
+    display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 66px;
+    padding: 16px 45px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    transition: 0.5s;
+}
+#banner .info a:hover{
+    background-color: var(--primary-color);
+    border: 1px solid transparent;
+    color: #fff;
+}
+#banner .follow p{
+    margin-right: 32px;
+}
+#banner .icon i{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-right: 16px;
+    line-height: 40px;
+    text-align: center;
+
+    
+}
+#banner .mouse{
+    justify-content: center;
+}
+.fa-computer-mouse{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+/* banner css end */
