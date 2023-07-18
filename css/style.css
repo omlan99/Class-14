@@ -30,7 +30,28 @@ a{
 li{
     list-style: none;
 }
+.btn{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 180%;
+    margin-right: 40px;
+    margin-bottom: 66px;
+    padding: 16px 45px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: var(--primary-color);
+    border: 1px solid transparent;
+    color: #fff;
+}
  
+img{
+    display: block;
+}
 /* common css end */
 
 /* nav css start */
@@ -60,11 +81,12 @@ nav .menu ul li a::after{
     background-color: var(--secondary-color);
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
     transition: 0.4s;
 }
 nav .menu ul li:hover a::after{
     width: 100%;
+    left: 0;
 }
 /* nav css end */
 
@@ -108,36 +130,29 @@ nav .menu ul li:hover a::after{
     line-height: 190%;
     padding-bottom: 77px;
 }
-#banner .info a{
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 180%;
-    margin-right: 40px;
-    margin-bottom: 66px;
-    padding: 16px 45px;
-    border: 1px solid #000;
-    border-radius: 20px;
-    color: var(--secondary-color);
-    transition: 0.5s;
-}
-#banner .info a:hover{
-    background-color: var(--primary-color);
-    border: 1px solid transparent;
-    color: #fff;
-}
-#banner .follow p{
+
+#banner .follow li{
     font-size: 22px;
     font-weight: 500;
     line-height: 180%;
+    display: inline-block;
+    
+}
+#banner .follow li:first-child{
     margin-right: 32px;
 }
-#banner .icon i{
+#banner .follow li a{
+    color: var(--secondary-color);
+    display: block;
+    margin-right: 16px;
+}
+#banner .follow i{
     width: 40px;
     height:40px;
+    font-size: 20px;
     border-radius: 50%;
-    background-color: transparent;
-    margin-right: 16px;
+    background-color: #F4F3F3;
+    /* margin-right: 16px; */
     line-height: 40px;
     text-align: center;
 
@@ -155,3 +170,43 @@ nav .menu ul li:hover a::after{
     font-size: 20px;
 }
 /* banner css end */
+
+
+/* about css end*/
+
+#about{
+    background: linear-gradient(130deg, #FC0 0%, #FAFFCB 100%);
+    position: relative;
+}
+#about .row{
+    align-items: center;
+    color: var(--secondary-color);
+    padding-top:78px;
+    
+}
+#about .abt_img{
+    height: 100%;
+    margin-right: 35px;
+}
+#about .abt_info h2{
+
+    font-family: var(--secondary-font);
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 26px;
+}
+#about .abt_info p{
+    font-family: var(--primary-font);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 190%;
+    padding-bottom: 45px;
+}
+#about .abt_info .icon{
+    position:absolute;
+    bottom: 0;
+    right: 79px;
+
+}
+
+/* about css end*/
