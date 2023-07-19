@@ -5,6 +5,7 @@
     --secondary-font: 'PT Sans', sans-serif;
     --primary-color:#FFCC00;
     --secondary-color: #353535;
+    --grey_color:#7A7A7A;
 }
 
 
@@ -49,7 +50,7 @@ li{
     color: #fff;
 }
  
-img{
+.img-responsive{
     display: block;
 }
 /* common css end */
@@ -210,3 +211,57 @@ nav .menu ul li:hover a::after{
 }
 
 /* about css end*/
+/* credit css start */
+#credit{
+    padding: 151px 0;
+}
+#credit .container .quality{
+    text-align: center;
+    padding:39px 47px 57px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+    margin-right: 32px;
+}
+#credit div h2{
+    color: var(--secondary-color);
+    padding: 14px 0 18px 0;
+}
+#credit div p{
+    color: var(--grey_color);
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 190%; /* 30.4px */
+}
+
+/* crdit css end */
+/* branding css start */
+#branding{
+
+}
+#branding .container{
+    background: linear-gradient(130deg, #FC0 0%, #FFF5CB 100%);
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    border-radius: 20px;
+}
+#branding  .container .info{
+    padding: 0 65px;
+}
+#branding  .container .info h2{
+    font-family: var(--secondary-font);
+    font-size: 44px;
+    font-weight: 700;
+    padding-top: 83px;
+}
+#branding  .container .info p{
+    padding: 21px 0 35px 0;
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 190%; /* 34.2px */
+
+}
+/* branding css end */
